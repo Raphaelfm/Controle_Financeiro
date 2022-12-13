@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Contas_Pagar_Windows.Controllers
 {
-    internal class ContasPagarController
+    public class ContasPagarController
     {
+
     }
 }
