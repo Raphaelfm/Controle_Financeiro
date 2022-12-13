@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCadContasReceber = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contasAPagarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,16 +38,6 @@
             this.saldoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnCadContasReceber
-            // 
-            this.btnCadContasReceber.Location = new System.Drawing.Point(317, 168);
-            this.btnCadContasReceber.Name = "btnCadContasReceber";
-            this.btnCadContasReceber.Size = new System.Drawing.Size(116, 23);
-            this.btnCadContasReceber.TabIndex = 0;
-            this.btnCadContasReceber.Text = "Clique em mim!";
-            this.btnCadContasReceber.UseVisualStyleBackColor = true;
-            this.btnCadContasReceber.Click += new System.EventHandler(this.btnCadContasReceber_Click);
             // 
             // menuStrip1
             // 
@@ -96,19 +85,19 @@
             // contasAPagarToolStripMenuItem1
             // 
             this.contasAPagarToolStripMenuItem1.Name = "contasAPagarToolStripMenuItem1";
-            this.contasAPagarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.contasAPagarToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
             this.contasAPagarToolStripMenuItem1.Text = "Contas a Pagar";
             // 
             // contasAReceberToolStripMenuItem1
             // 
             this.contasAReceberToolStripMenuItem1.Name = "contasAReceberToolStripMenuItem1";
-            this.contasAReceberToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.contasAReceberToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
             this.contasAReceberToolStripMenuItem1.Text = "Contas a Receber";
             // 
             // saldoToolStripMenuItem
             // 
             this.saldoToolStripMenuItem.Name = "saldoToolStripMenuItem";
-            this.saldoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saldoToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.saldoToolStripMenuItem.Text = "Saldo";
             // 
             // Form1
@@ -116,11 +105,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnCadContasReceber);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Controle de Finanças";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -130,8 +118,6 @@
         }
 
         #endregion
-
-        private Button btnCadContasReceber;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem cadastroToolStripMenuItem;
         private ToolStripMenuItem contasAPagarToolStripMenuItem;
