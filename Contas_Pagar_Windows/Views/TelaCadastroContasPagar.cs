@@ -1,4 +1,5 @@
 ﻿using Contas_Pagar_Windows.Banco;
+using Contas_Pagar_Windows.Controllers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace Contas_Pagar_Windows.Views
     public partial class TelaCadastroContasPagar : Form
     {
         ConexaoBd banco;
+        ContasPagarController contas = new ContasPagarController();
         public TelaCadastroContasPagar()
         {
             InitializeComponent();
@@ -25,6 +27,15 @@ namespace Contas_Pagar_Windows.Views
         {
             banco.conectar();
         }
-        
+
+        private void buttonCadastrar_Click(object sender, EventArgs e)
+        {
+            contas.CadastrarContaPagar(
+                textBoxRecebedor,
+                textBoxValor,
+                dataPickerContPagar,
+                textBoxObservacao
+                );
+        }
     }
 }

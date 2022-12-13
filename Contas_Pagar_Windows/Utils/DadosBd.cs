@@ -30,6 +30,7 @@ namespace Contas_Pagar_Windows.Utils
             this.Porta = m.Porta;
             this.Senha = m.Senha;
             this.Usuario = m.Usuario;
+            this.BancoDados = m.BancoDados;
         }
     }
 }
