@@ -45,5 +45,11 @@ namespace Contas_Pagar_Windows.Controllers
                 contas.Observacao + "')");
             this.banco.close();
         }
+
+        public MySqlDataReader listarContasPagar()
+        {
+            this.banco.conectar();
+            return this.banco.Query("select * from contaspagar");
+        }
     }
 }

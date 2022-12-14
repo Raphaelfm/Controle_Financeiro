@@ -86,19 +86,20 @@
             // contasAPagarToolStripMenuItem1
             // 
             this.contasAPagarToolStripMenuItem1.Name = "contasAPagarToolStripMenuItem1";
-            this.contasAPagarToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.contasAPagarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.contasAPagarToolStripMenuItem1.Text = "Contas a Pagar";
+            this.contasAPagarToolStripMenuItem1.Click += new System.EventHandler(this.contasAPagarToolStripMenuItem1_Click);
             // 
             // contasAReceberToolStripMenuItem1
             // 
             this.contasAReceberToolStripMenuItem1.Name = "contasAReceberToolStripMenuItem1";
-            this.contasAReceberToolStripMenuItem1.Size = new System.Drawing.Size(165, 22);
+            this.contasAReceberToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.contasAReceberToolStripMenuItem1.Text = "Contas a Receber";
             // 
             // saldoToolStripMenuItem
             // 
             this.saldoToolStripMenuItem.Name = "saldoToolStripMenuItem";
-            this.saldoToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.saldoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saldoToolStripMenuItem.Text = "Saldo";
             // 
             // Form1

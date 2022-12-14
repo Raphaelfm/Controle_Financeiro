@@ -25,5 +25,11 @@ namespace Contas_Pagar_Windows
             TelaCadastroContasReceber cReber = new TelaCadastroContasReceber();
             cReber.Show();
         }
+
+        private void contasAPagarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TelaRelatorioContasPagar rPagar = new TelaRelatorioContasPagar();
+            rPagar.Show();
+        }
     }
 }
