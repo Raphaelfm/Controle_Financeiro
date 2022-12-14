@@ -12,5 +12,6 @@ namespace Contas_Pagar_Windows.Models
         public DateTime Data { get; set; }
         public double Valor { get; set; }
         public string? Observacao { get; set; }
+        public string? StatusPG { get; set; }
     }
 }

@@ -35,6 +35,7 @@
             this.labelValor = new System.Windows.Forms.Label();
             this.textBoxValor = new System.Windows.Forms.TextBox();
             this.dataPickerContPagar = new System.Windows.Forms.DateTimePicker();
+            this.buttonCadastrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,11 +93,22 @@
             this.dataPickerContPagar.Size = new System.Drawing.Size(200, 23);
             this.dataPickerContPagar.TabIndex = 6;
             // 
+            // buttonCadastrar
+            // 
+            this.buttonCadastrar.Location = new System.Drawing.Point(10, 288);
+            this.buttonCadastrar.Name = "buttonCadastrar";
+            this.buttonCadastrar.Size = new System.Drawing.Size(417, 23);
+            this.buttonCadastrar.TabIndex = 7;
+            this.buttonCadastrar.Text = "CADASTRAR";
+            this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
+            // 
             // TelaCadastroContasPagar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 314);
+            this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.dataPickerContPagar);
             this.Controls.Add(this.textBoxValor);
             this.Controls.Add(this.labelValor);
@@ -121,5 +133,6 @@
         private Label labelValor;
         private TextBox textBoxValor;
         private DateTimePicker dataPickerContPagar;
+        private Button buttonCadastrar;
     }
 }
