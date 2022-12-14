@@ -29,5 +29,29 @@ namespace Contas_Pagar_Windows.Views
             dt.Load(temp);
             dataGridContasPagar.DataSource = dt;
         }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            int linhaAtual = 0;
+            string codigo = "";
+            linhaAtual = dataGridContasPagar.CurrentRow.Index;
+            try
+            {
+                codigo = dataGridContasPagar[0, linhaAtual].Value.ToString();
+            }
+            catch
+            {
+            }
+
+            if (MessageBox.Show("Tem certeza que deseja remover Conta a Pagar?", "Confirmar", MessageBoxButtons.
+                YesNoCancel) == DialogResult.Yes)
+            {
+                if (codigo != "")
+                {
+                    contas.ExcluirContaPagar(codigo);
+                    atualizarDataGrid();
+                }
+            }
+        }        
     }
 }

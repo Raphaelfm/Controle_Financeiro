@@ -51,5 +51,27 @@ namespace Contas_Pagar_Windows.Controllers
             this.banco.conectar();
             return this.banco.Query("select * from contaspagar");
         }
+
+        // ---ALTERAR---
+        //public void alterarContaPagar()
+        //{
+        //    this.banco.conectar();
+        //    this.banco.nonQuery("UPDATE contaspagar set Recebedor ='" + contas.Recebedor +
+        //        "', Valor ='" + contas.Valor +
+        //        "', DataPagamento ='" + data +
+        //        "', Observacao ='" + contas.Observacao +
+        //        "', StatusPG ='" + contas.StatusPG +
+        //        "' where Codigo ='" + contas.Codigo + "';");
+        //    this.banco.close();
+        //}
+
+        // ---EXCLUIR---
+        public void ExcluirContaPagar(string codigo)
+        {
+            contas.Codigo = int.Parse(codigo);
+            this.banco.conectar();
+            this.banco.nonQuery("Delete from contaspagar where Codigo ='" + contas.Codigo + "'");
+            this.banco.close();
+        }
     }
 }

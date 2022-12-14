@@ -8,6 +8,7 @@ namespace Contas_Pagar_Windows.Models
 {
     internal class ContasPagar
     {
+        public int Codigo { get; set; }
         public string? Recebedor { get; set; }
         public DateTime Data { get; set; }
         public double Valor { get; set; }
