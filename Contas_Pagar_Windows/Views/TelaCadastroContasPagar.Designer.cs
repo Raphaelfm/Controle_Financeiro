@@ -51,14 +51,14 @@
             // 
             this.textBoxRecebedor.Location = new System.Drawing.Point(12, 53);
             this.textBoxRecebedor.Name = "textBoxRecebedor";
-            this.textBoxRecebedor.Size = new System.Drawing.Size(328, 23);
+            this.textBoxRecebedor.Size = new System.Drawing.Size(415, 23);
             this.textBoxRecebedor.TabIndex = 1;
             // 
             // textBoxObservacao
             // 
             this.textBoxObservacao.Location = new System.Drawing.Point(12, 119);
             this.textBoxObservacao.Name = "textBoxObservacao";
-            this.textBoxObservacao.Size = new System.Drawing.Size(328, 23);
+            this.textBoxObservacao.Size = new System.Drawing.Size(415, 23);
             this.textBoxObservacao.TabIndex = 3;
             // 
             // labelObservaco
@@ -88,25 +88,27 @@
             // 
             // dataPickerContPagar
             // 
-            this.dataPickerContPagar.Location = new System.Drawing.Point(14, 238);
+            this.dataPickerContPagar.Location = new System.Drawing.Point(150, 189);
             this.dataPickerContPagar.Name = "dataPickerContPagar";
-            this.dataPickerContPagar.Size = new System.Drawing.Size(200, 23);
+            this.dataPickerContPagar.Size = new System.Drawing.Size(277, 23);
             this.dataPickerContPagar.TabIndex = 6;
             // 
             // buttonCadastrar
             // 
+            this.buttonCadastrar.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonCadastrar.Location = new System.Drawing.Point(10, 288);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(417, 23);
             this.buttonCadastrar.TabIndex = 7;
             this.buttonCadastrar.Text = "CADASTRAR";
-            this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.UseVisualStyleBackColor = false;
             this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // TelaCadastroContasPagar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(439, 314);
             this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.dataPickerContPagar);
@@ -118,6 +120,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "TelaCadastroContasPagar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Contas a Pagar";
             this.ResumeLayout(false);
             this.PerformLayout();

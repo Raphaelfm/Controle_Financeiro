@@ -22,14 +22,20 @@ namespace Contas_Pagar_Windows
 
         private void contasAReceberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaCadastroContasReceber cReber = new TelaCadastroContasReceber();
-            cReber.Show();
+            TelaCadastroContasReceber cReceber = new TelaCadastroContasReceber();
+            cReceber.Show();
         }
 
         private void contasAPagarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             TelaRelatorioContasPagar rPagar = new TelaRelatorioContasPagar();
             rPagar.Show();
+        }
+
+        private void contasAReceberToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TelaRelatorioContasReceber rReceber = new TelaRelatorioContasReceber();
+            rReceber.Show();
         }
     }
 }

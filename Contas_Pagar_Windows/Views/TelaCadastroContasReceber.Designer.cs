@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroContasReceber));
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.dataPickerContPagar = new System.Windows.Forms.DateTimePicker();
             this.textBoxValor = new System.Windows.Forms.TextBox();
@@ -40,19 +41,20 @@
             // 
             // buttonCadastrar
             // 
+            this.buttonCadastrar.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.buttonCadastrar.Location = new System.Drawing.Point(10, 271);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(417, 23);
             this.buttonCadastrar.TabIndex = 15;
             this.buttonCadastrar.Text = "CADASTRAR";
-            this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.UseVisualStyleBackColor = false;
             this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // dataPickerContPagar
             // 
-            this.dataPickerContPagar.Location = new System.Drawing.Point(14, 221);
+            this.dataPickerContPagar.Location = new System.Drawing.Point(153, 172);
             this.dataPickerContPagar.Name = "dataPickerContPagar";
-            this.dataPickerContPagar.Size = new System.Drawing.Size(200, 23);
+            this.dataPickerContPagar.Size = new System.Drawing.Size(274, 23);
             this.dataPickerContPagar.TabIndex = 14;
             // 
             // textBoxValor
@@ -75,7 +77,7 @@
             // 
             this.textBoxObservacao.Location = new System.Drawing.Point(12, 102);
             this.textBoxObservacao.Name = "textBoxObservacao";
-            this.textBoxObservacao.Size = new System.Drawing.Size(328, 23);
+            this.textBoxObservacao.Size = new System.Drawing.Size(415, 23);
             this.textBoxObservacao.TabIndex = 11;
             // 
             // labelObservaco
@@ -91,7 +93,7 @@
             // 
             this.textBoxOrigem.Location = new System.Drawing.Point(12, 36);
             this.textBoxOrigem.Name = "textBoxOrigem";
-            this.textBoxOrigem.Size = new System.Drawing.Size(328, 23);
+            this.textBoxOrigem.Size = new System.Drawing.Size(415, 23);
             this.textBoxOrigem.TabIndex = 9;
             // 
             // labelOrigem
@@ -107,6 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(435, 301);
             this.Controls.Add(this.buttonCadastrar);
             this.Controls.Add(this.dataPickerContPagar);
@@ -116,7 +119,10 @@
             this.Controls.Add(this.labelObservaco);
             this.Controls.Add(this.textBoxOrigem);
             this.Controls.Add(this.labelOrigem);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCadastroContasReceber";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Contas a Receber";
             this.ResumeLayout(false);
             this.PerformLayout();
