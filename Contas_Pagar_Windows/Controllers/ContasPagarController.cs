@@ -1,8 +1,10 @@
 ﻿using Contas_Pagar_Windows.Banco;
 using Contas_Pagar_Windows.Models;
+using Google.Protobuf.WellKnownTypes;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +24,8 @@ namespace Contas_Pagar_Windows.Controllers
         public void CadastrarContaPagar(TextBox textBoxRecebedor, TextBox textBoxValor, DateTimePicker dataPickerContPagar, TextBox textBoxObservacao)
         {
             contas.Recebedor = textBoxRecebedor.Text;
-            contas.Valor = Convert.ToDouble(textBoxValor.Text);
+            double valor = Convert.ToDouble((textBoxValor.Text.Trim()));
+            contas.Valor = valor;
             //contas.Data = Convert.ToDateTime(dataPickerContPagar.Text);
             contas.Observacao = textBoxObservacao.Text;
 
@@ -37,7 +40,7 @@ namespace Contas_Pagar_Windows.Controllers
             this.banco.conectar();
             this.banco.nonQuery("insert into contaspagar (Recebedor,Valor,DataPagamento,Observacao)  values " +
                 "('" + contas.Recebedor + "', '" +
-                contas.Valor + "','" +
+                contas.Valor.ToString().Replace(",",".") + "','" +
                 data + "','" +
                 contas.Observacao + "')");
             this.banco.close();

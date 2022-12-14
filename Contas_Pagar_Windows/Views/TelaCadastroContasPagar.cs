@@ -19,13 +19,21 @@ namespace Contas_Pagar_Windows.Views
         public TelaCadastroContasPagar()
         {
             InitializeComponent();
-            this.banco= new ConexaoBd();
+            this.banco = new ConexaoBd();
             Conec();
         }
 
         public void Conec()
         {
             banco.conectar();
+        }
+
+        private void limparCampos()
+        {
+            textBoxRecebedor.Text = "";
+            textBoxValor.Text = "";
+            dataPickerContPagar.Text = "";
+            textBoxObservacao.Text = "";
         }
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
@@ -36,6 +44,9 @@ namespace Contas_Pagar_Windows.Views
                 dataPickerContPagar,
                 textBoxObservacao
                 );
+
+            MessageBox.Show("Cadastro realizado com sucesso!");
+            limparCampos();
         }
     }
 }

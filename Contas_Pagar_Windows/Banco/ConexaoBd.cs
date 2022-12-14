@@ -13,6 +13,7 @@ namespace Contas_Pagar_Windows.Banco
     public class ConexaoBd
     {
         DadosBd config = new DadosBd();
+        ContasPagar contas = new ContasPagar();
         private string host = "localhost";
         //private string database = "";
         //private string user = "";
@@ -42,8 +43,8 @@ namespace Contas_Pagar_Windows.Banco
             cmd.ExecuteNonQuery();
         }
         public MySqlDataReader Query(string sql)
-        {
-            this.cmd.CommandText = sql;
+        {            
+            this.cmd.CommandText = sql;            
             return this.cmd.ExecuteReader();
         }
     }
