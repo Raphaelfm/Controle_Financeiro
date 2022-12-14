@@ -1,5 +1,4 @@
-﻿using Contas_Pagar_Windows.Banco;
-using Contas_Pagar_Windows.Controllers;
+﻿using Contas_Pagar_Windows.Controllers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,18 +11,18 @@ using System.Windows.Forms;
 
 namespace Contas_Pagar_Windows.Views
 {
-    public partial class TelaCadastroContasPagar : Form
+    public partial class TelaCadastroContasReceber : Form
     {
-        ContasPagarController contas;
-        public TelaCadastroContasPagar()
+        ContasReceberController contas;
+        public TelaCadastroContasReceber()
         {
             InitializeComponent();
-            contas = new ContasPagarController();
-        }        
+            contas = new ContasReceberController();
+        }
 
         private void limparCampos()
         {
-            textBoxRecebedor.Text = "";
+            textBoxOrigem.Text = "";
             textBoxValor.Text = "";
             dataPickerContPagar.Text = "";
             textBoxObservacao.Text = "";
@@ -31,8 +30,8 @@ namespace Contas_Pagar_Windows.Views
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
         {
-            contas.CadastrarContaPagar(
-                textBoxRecebedor,
+            contas.CadastrarContaReceber(
+                textBoxOrigem,
                 textBoxValor,
                 dataPickerContPagar,
                 textBoxObservacao

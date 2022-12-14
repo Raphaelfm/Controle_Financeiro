@@ -14,16 +14,16 @@ namespace Contas_Pagar_Windows
 
         }
 
-        private void btnCadContasReceber_Click(object sender, EventArgs e)
+        private void contasAPagarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaCadastroContasPagar cPagar = new TelaCadastroContasPagar();
             cPagar.Show();
         }
 
-        private void contasAPagarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void contasAReceberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaCadastroContasPagar cPagar = new TelaCadastroContasPagar();
-            cPagar.Show();
+            TelaCadastroContasReceber cReber = new TelaCadastroContasReceber();
+            cReber.Show();
         }
     }
 }
