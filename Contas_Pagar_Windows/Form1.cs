@@ -1,4 +1,5 @@
 using Contas_Pagar_Windows.Views;
+using Contas_Pagar_Windows.Views.Cadastros;
 
 namespace Contas_Pagar_Windows
 {
@@ -16,8 +17,8 @@ namespace Contas_Pagar_Windows
 
         private void contasAPagarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaCadastroContasPagar cPagar = new TelaCadastroContasPagar();
-            cPagar.Show();
+            TelaPrincipalCadastrosContasPagar pContasPagar = new TelaPrincipalCadastrosContasPagar();
+            pContasPagar.Show();
         }
 
         private void contasAReceberToolStripMenuItem_Click(object sender, EventArgs e)
