@@ -18,7 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Cadastros\Editar\" />
+    <Compile Update="Views\Cadastros\ContasReceber\TelaPrincipalCadastrosContasReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>

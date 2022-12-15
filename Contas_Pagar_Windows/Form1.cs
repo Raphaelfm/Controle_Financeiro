@@ -23,8 +23,8 @@ namespace Contas_Pagar_Windows
 
         private void contasAReceberToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaCadastroContasReceber cReceber = new TelaCadastroContasReceber();
-            cReceber.Show();
+            TelaPrincipalCadastrosContasReceber pContasReceber = new TelaPrincipalCadastrosContasReceber();
+            pContasReceber.Show();
         }
 
         private void contasAPagarToolStripMenuItem1_Click(object sender, EventArgs e)
